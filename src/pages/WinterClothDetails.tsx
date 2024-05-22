@@ -11,29 +11,23 @@ export default function WinterClothDetails() {
   return (
     <Container>
       <div className="hero bg-base-200">
-        <div className="hero-content flex-col lg:flex-row">
-          <div className=" lg:w-1/2 w-full">
+        <div className="hero-content flex-col gap-3 lg:flex-row">
+          <div className=" w-full">
             <img
               src={data?.data?.image}
-              className=" rounded-lg shadow-2xl w-full"
+              className=" rounded-xl shadow-2xl w-full"
               alt=""
             />
           </div>
-          <div>
+          <div className="md:ml-5 md:w-9/12 w-full">
             <h1 className="text-5xl font-bold">{data?.data?.title}</h1>
             <p className="py-6">{data?.data?.description}</p>
             <p className="py-2">Category:{data?.data?.category}</p>
             <p className="py-2">
               Available Size:{" "}
-              {data?.data?.available_sizes.map(
-                (size: string, index: number) => (
-                  <span key={index} className=" me-1">
-                    {size}
-                  </span>
-                )
-              )}
+              {data?.data?.available_sizes}
             </p>
-            <button className="btn btn-primary">Buy Now</button>
+            <button className="btn btn-primary">Donate Now</button>
           </div>
         </div>
       </div>

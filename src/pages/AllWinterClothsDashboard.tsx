@@ -6,6 +6,7 @@ import { IWinterCloth } from "../types/winter-cloths..type";
 
 export default function AllWinterClothsDashboard() {
   const { data, isLoading } = useGetAllWinterClothsQuery(undefined);
+  console.log({ data });
   const [deleteWinterCloth, { isLoading: deleteLoader }] =
     useDeleteWinterClothMutation();
   const handleDeleteWinterCloth = async (id: string) => {
@@ -53,7 +54,7 @@ export default function AllWinterClothsDashboard() {
                 </th>
                 <th>
                   <button
-                    onClick={() => handleDeleteWinterCloth(item._id)}
+                    onClick={() => handleDeleteWinterCloth(item._id as string)}
                     className="btn btn-error btn-xs"
                   >
                     {deleteLoader ? (

@@ -1,5 +1,5 @@
 export interface IWinterCloth {
-  _id: string;
+  _id: string | null;
   image: string;
   title: string;
   category: string;

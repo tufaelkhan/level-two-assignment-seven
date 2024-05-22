@@ -8,14 +8,15 @@ import WinterClothCard from "../cards/WinterClothCard";
 
 export default function WinterClothSection() {
   const { data, isLoading } = useGetAllWinterClothsQuery(6);
-
   if (isLoading) <Loader />;
+  // console.log(data?.data)
+
   return (
     <Container>
       <Header>Winter Clothes</Header>
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
-        {data?.data.map((item: IWinterCloth) => (
-          <WinterClothCard key={item._id} data={item} />
+        {data?.data?.map((item: IWinterCloth) => (
+          <WinterClothCard key={item?._id} data={item} />
         ))}
       </div>
       <div className=" flex justify-center mt-7">

@@ -1,4 +1,4 @@
-import AboutUsSection from "../components/ui/home/AboutUsSection";
+
 import ContactSection from "../components/ui/home/ContactSection";
 import DonorSection from "../components/ui/home/DonorSection";
 import Gallery from "../components/ui/home/Gallery";

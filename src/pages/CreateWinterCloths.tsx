@@ -46,11 +46,12 @@ export default function CreateWinterCloths() {
     Swal.fire(res.message);
   };
   return (
-    <div>
-      <h1 className=" text-center text-3xl lg:text-4xl mb-5">
+    <div className="w-1/2 mx-auto p-7 shadow-2xl bg-base-200 rounded-lg">
+      <div>
+      <h1 className=" text-center text-3xl lg:text-4xl mb-5 font-semibold">
         Create Winter Cloths
       </h1>
-      <div className=" flex justify-center items-center">
+      <div className="justify-center items-center">
         <From
           handler={handleCreateWinterCloth}
           schema={CreateWinterClothsSchema}
@@ -63,6 +64,7 @@ export default function CreateWinterCloths() {
           <FromSubmit loading={isLoading}>Create Now</FromSubmit>
         </From>
       </div>
+    </div>
     </div>
   );
 }

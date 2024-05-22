@@ -8,7 +8,7 @@ const getAllWinterCloths = baseApi.injectEndpoints({
         if (limit) {
           params.append("limit", limit);
         }
-        return { url: "/winter-cloth", method: "GET", params: params };
+        return { url: "winter-cloth", method: "GET", params: params };
       },
       providesTags: ["winter-cloths"],
     }),
