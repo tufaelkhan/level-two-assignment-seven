@@ -2,14 +2,13 @@ export default function GalleryCard() {
   return (
     <div className="card card-compact bg-base-100 shadow-xl">
       <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+        <img className="h-60"
+          src="https://images.pexels.com/photos/11319521/pexels-photo-11319521.jpeg?auto=compress&cs=tinysrgb&w=400"
           alt="Shoes"
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <h2 className="card-title">Join Us in Spreading Winter Warmth</h2>
       </div>
     </div>
   );

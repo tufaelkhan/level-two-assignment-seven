@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Container from "../../shared/container/Container";
 import Header from "../../shared/heading/Header";
 import GalleryCard from "../cards/GalleryCard";
+import GalleryCard2 from "../cards/GalleryCard2";
+import GalleryCard3 from "../cards/GalleryCard3";
 export default function Gallery() {
   return (
     <Container>
@@ -36,10 +38,10 @@ export default function Gallery() {
           <GalleryCard />
         </SwiperSlide>
         <SwiperSlide>
-          <GalleryCard />
+          <GalleryCard2 />
         </SwiperSlide>
         <SwiperSlide>
-          <GalleryCard />
+          <GalleryCard3 />
         </SwiperSlide>
       </Swiper>
     </Container>
