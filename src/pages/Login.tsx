@@ -29,7 +29,7 @@ export default function Login() {
             <div className=" flex justify-between items-center">
               <label className="label">
                 <p className="label-text-alt">
-                  <span>New in ChillNexus?</span>
+                  <span>New in Winter Clothes Donation?</span>
                   <Link to={"/auth/register"} className=" link link-hover">
                     Create account
                   </Link>

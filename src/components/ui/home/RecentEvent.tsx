@@ -3,6 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Container from "../../shared/container/Container";
 import Header from "../../shared/heading/Header";
 import RecentEventCard from "../cards/RecentEventCard";
+import RecentEventCard2 from "../cards/RecentEventCard2";
+import RecentEventCard3 from "../cards/RecentEventsCard3";
+
 export default function RecentEvent() {
   return (
     <Container>
@@ -22,10 +25,10 @@ export default function RecentEvent() {
           <RecentEventCard />
         </SwiperSlide>
         <SwiperSlide>
-          <RecentEventCard />
+          <RecentEventCard2 />
         </SwiperSlide>
         <SwiperSlide>
-          <RecentEventCard />
+          <RecentEventCard3 />
         </SwiperSlide>
       </Swiper>
     </Container>
