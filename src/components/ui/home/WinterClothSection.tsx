@@ -12,7 +12,7 @@ export default function WinterClothSection() {
   if (isLoading) <Loader />;
   return (
     <Container>
-      <Header>Winter Clothes Posts</Header>
+      <Header>Winter Clothes</Header>
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
         {data?.data.map((item: IWinterCloth) => (
           <WinterClothCard key={item._id} data={item} />
